@@ -1,5 +1,2 @@
 ﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppBuild.targets(513,5): warning MSB8028: промежуточный каталог (Debug\) содержит файлы, которые используются совместно с другим проектом (test_parseMatrixFromLines.vcxproj).  Это может привести к ошибкам очистки и перестроения.
-  pch.cpp
-  test_parseMatrixFromLines.cpp
-     Создается библиотека C:\Users\andre\Desktop\DorovskojProject\SearchMatrixIdenticalElements\Debug\test_parseMatrixFromLines.lib и объект C:\Users\andre\Desktop\DorovskojProject\SearchMatrixIdenticalElements\Debug\test_parseMatrixFromLines.exp
   test_parseMatrixFromLines.vcxproj -> C:\Users\andre\Desktop\DorovskojProject\SearchMatrixIdenticalElements\Debug\test_parseMatrixFromLines.dll
