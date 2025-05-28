@@ -11,6 +11,11 @@ struct Rectangle {
     int size;     ///< Площадь подматрицы (rows × cols).
 };
 
+// Заглушка isValidMatrix
+bool isValidMatrix(const std::vector<std::vector<int>>& matrix, int maxSize) {
+    return true;
+}
+
 // Заглушка parseMatrixFromLines
 std::vector<std::vector<int>> parseMatrixFromLines(const std::vector<std::string>& lines) {
     return {

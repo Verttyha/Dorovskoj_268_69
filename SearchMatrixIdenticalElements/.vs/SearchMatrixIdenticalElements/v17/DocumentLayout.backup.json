@@ -8,6 +8,16 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\andre\\Desktop\\Dorovskoj_268_69\\Dorovskoj_268_69.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A94BA4A2-6E29-422D-890D-878C7E75CB7D}|SearchMatrixIdenticalElements.vcxproj|C:\\Users\\andre\\Desktop\\DorovskojProject\\SearchMatrixIdenticalElements\\functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{A94BA4A2-6E29-422D-890D-878C7E75CB7D}|SearchMatrixIdenticalElements.vcxproj|solutionrelative:functions.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2EC578FF-FD43-4BAA-979D-5F8227C18E71}|..\\test_isValidMatrix\\test_isValidMatrix.vcxproj|C:\\Users\\andre\\Desktop\\DorovskojProject\\test_isValidMatrix\\test_isValidMatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6390572D-BB9E-4809-AEE1-DCD782A04397}|..\\test_findMaxIdenticalSubmatrix\\test_findMaxIdenticalSubmatrix.vcxproj|C:\\Users\\andre\\Desktop\\DorovskojProject\\test_findMaxIdenticalSubmatrix\\test_findMaxIdenticalSubmatrix.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -17,8 +27,47 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "test_findMaxIdenticalSubmatrix.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\DorovskojProject\\test_findMaxIdenticalSubmatrix\\test_findMaxIdenticalSubmatrix.cpp",
+              "RelativeDocumentMoniker": "..\\test_findMaxIdenticalSubmatrix\\test_findMaxIdenticalSubmatrix.cpp",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\DorovskojProject\\test_findMaxIdenticalSubmatrix\\test_findMaxIdenticalSubmatrix.cpp",
+              "RelativeToolTip": "..\\test_findMaxIdenticalSubmatrix\\test_findMaxIdenticalSubmatrix.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-28T13:19:33.485Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "functions.h",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\DorovskojProject\\SearchMatrixIdenticalElements\\functions.h",
+              "RelativeDocumentMoniker": "functions.h",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\DorovskojProject\\SearchMatrixIdenticalElements\\functions.h",
+              "RelativeToolTip": "functions.h",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-05-28T13:15:33.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "test_isValidMatrix.cpp",
+              "DocumentMoniker": "C:\\Users\\andre\\Desktop\\DorovskojProject\\test_isValidMatrix\\test_isValidMatrix.cpp",
+              "RelativeDocumentMoniker": "..\\test_isValidMatrix\\test_isValidMatrix.cpp",
+              "ToolTip": "C:\\Users\\andre\\Desktop\\DorovskojProject\\test_isValidMatrix\\test_isValidMatrix.cpp",
+              "RelativeToolTip": "..\\test_isValidMatrix\\test_isValidMatrix.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-05-28T13:12:06.841Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -27,7 +76,7 @@
               "RelativeDocumentMoniker": "..\\..\\Dorovskoj_268_69\\Dorovskoj_268_69.cpp",
               "ToolTip": "C:\\Users\\andre\\Desktop\\Dorovskoj_268_69\\Dorovskoj_268_69.cpp",
               "RelativeToolTip": "..\\..\\Dorovskoj_268_69\\Dorovskoj_268_69.cpp",
-              "ViewState": "AgIAAJkAAAAAAAAAAAAAAKcAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-23T18:28:00.699Z",
               "EditorCaption": ""
@@ -40,7 +89,7 @@
               "RelativeDocumentMoniker": "SearchMatrixIdenticalElements.cpp",
               "ToolTip": "C:\\Users\\andre\\Desktop\\DorovskojProject\\SearchMatrixIdenticalElements\\SearchMatrixIdenticalElements.cpp",
               "RelativeToolTip": "SearchMatrixIdenticalElements.cpp",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABYAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-05-23T18:21:43.57Z",
               "EditorCaption": ""
