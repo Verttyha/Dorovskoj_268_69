@@ -1,6 +1,6 @@
-﻿#ifndef FUNCTIONS_H
+﻿#pragma once
+#ifndef FUNCTIONS_H
 #define FUNCTIONS_H
-
 #include <vector>
 #include <string>
 #include "errors.h"

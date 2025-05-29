@@ -1,20 +1,36 @@
-﻿// SearchMatrixIdenticalElements.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
-//
-
+﻿#include <vector>
+#include <string>
 #include <iostream>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+/// @brief Структура, описывающая прямоугольную подматрицу.
+struct Rectangle {
+    int rowStart; ///< Индекс начальной строки (верхняя граница).
+    int colStart; ///< Индекс начального столбца (левая граница).
+    int rowEnd;   ///< Индекс конечной строки (нижняя граница).
+    int colEnd;   ///< Индекс конечного столбца (правая граница).
+    int size;     ///< Площадь подматрицы (rows × cols).
+};
+
+// Заглушка isValidMatrix
+bool isValidMatrix(const std::vector<std::vector<int>>& matrix, int maxSize) {
+    return true;
 }
 
-// Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
-// Отладка программы: F5 или меню "Отладка" > "Запустить отладку"
+// Заглушка parseMatrixFromLines
+std::vector<std::vector<int>> parseMatrixFromLines(const std::vector<std::string>& lines) {
+    return {
+        {1, 2, 3},
+        {1, 2, 3},
+        {1, 2, 3}
+    };
+}
 
-// Советы по началу работы 
-//   1. В окне обозревателя решений можно добавлять файлы и управлять ими.
-//   2. В окне Team Explorer можно подключиться к системе управления версиями.
-//   3. В окне "Выходные данные" можно просматривать выходные данные сборки и другие сообщения.
-//   4. В окне "Список ошибок" можно просматривать ошибки.
-//   5. Последовательно выберите пункты меню "Проект" > "Добавить новый элемент", чтобы создать файлы кода, или "Проект" > "Добавить существующий элемент", чтобы добавить в проект существующие файлы кода.
-//   6. Чтобы снова открыть этот проект позже, выберите пункты меню "Файл" > "Открыть" > "Проект" и выберите SLN-файл.
+// Заглушка findMaxIdenticalSubmatrix
+Rectangle findMaxIdenticalSubmatrix(const std::vector<std::vector<int>>& matrix) {
+    Rectangle maxRect = { 0, 0, 0, 0, 1 };
+
+    return maxRect;
+}
+int main() {
+    return 0;
+}
