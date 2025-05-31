@@ -128,7 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="findMaxIdenticalSubmatrix.cpp" />
+    <ClCompile Include="isValidMatrix.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="parseMatrixFromLines.cpp" />
+    <ClCompile Include="readLinesFromFile.cpp" />
+    <ClCompile Include="readMatrixFromFile.cpp" />
+    <ClCompile Include="writeMatrixToFile.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="errors.h" />
