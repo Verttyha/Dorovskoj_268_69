@@ -1,0 +1,330 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/functions.h File Reference}
+\hypertarget{functions_8h}{}\label{functions_8h}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/functions.h@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/functions.h}}
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_rectangle}{Rectangle}}
+\begin{DoxyCompactList}\small\item\em Структура, описывающая прямоугольную подматрицу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{functions_8h_a89b8fec42e19f131552aa65ae42c61e1}{FUNCTIONS\+\_\+H}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{functions_8h_a40cef7bd932ec02121419dca2d30d055}{is\+Valid\+Matrix}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix, int max\+Size)
+\begin{DoxyCompactList}\small\item\em Проверяет размеры и форму матрицы (прямоугольность, ограничения). \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{functions_8h_aa3f33bf26832c862d7d22005291d4486}{read\+Lines\+From\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Считывает все строки из текстового файла. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{functions_8h_abfafb2214a110f03e0051e9510837d48}{parse\+Matrix\+From\+Lines}} (const std\+::vector$<$ std\+::string $>$ \&lines)
+\begin{DoxyCompactList}\small\item\em Преобразует строки в числовую матрицу. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_a2fc70166c1c3fbc343df3bc97a9d9151}{read\+Matrix\+From\+File}} (const std\+::string \&filename, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Объединяет чтение строк и парсинг матрицы из файла. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{functions_8h_aa1e4af95db754e3ea52c83559ff4b3ee}{write\+Matrix\+To\+File}} (const std\+::string \&filename, const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Записывает матрицу в текстовый файл. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{functions_8h_aab1da2c16adee146f74b119a3f8796f4}{find\+Max\+Identical\+Submatrix}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Находит наибольшую по площади подматрицу с одинаковыми элементами. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{functions_8h_a89b8fec42e19f131552aa65ae42c61e1}\index{functions.h@{functions.h}!FUNCTIONS\_H@{FUNCTIONS\_H}}
+\index{FUNCTIONS\_H@{FUNCTIONS\_H}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{FUNCTIONS\_H}{FUNCTIONS\_H}}
+{\footnotesize\ttfamily \label{functions_8h_a89b8fec42e19f131552aa65ae42c61e1} 
+\#define FUNCTIONS\+\_\+H}
+
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{functions_8h_aab1da2c16adee146f74b119a3f8796f4}\index{functions.h@{functions.h}!findMaxIdenticalSubmatrix@{findMaxIdenticalSubmatrix}}
+\index{findMaxIdenticalSubmatrix@{findMaxIdenticalSubmatrix}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{findMaxIdenticalSubmatrix()}{findMaxIdenticalSubmatrix()}}
+{\footnotesize\ttfamily \label{functions_8h_aab1da2c16adee146f74b119a3f8796f4} 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} find\+Max\+Identical\+Submatrix (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Находит наибольшую по площади подматрицу с одинаковыми элементами. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Исходная матрица. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Структура \doxylink{struct_rectangle}{Rectangle}, описывающая найденную подматрицу.
+\end{DoxyReturn}
+Находит наибольшую по площади подматрицу с одинаковыми элементами.
+
+Последовательно проверяет все возможные прямоугольные подматрицы, начиная от каждой позиции (i, j). Сравнивает каждый элемент с эталонным значением — значением в (i, j).
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Матрица целых чисел. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_rectangle}{Rectangle} Прямоугольник с координатами и площадью максимальной однородной подматрицы. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & если матрица некорректна. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Количество строк в матрице.
+
+\texorpdfstring{$<$}{<} Возврат пустого прямоугольника при пустой матрице.
+
+\texorpdfstring{$<$}{<} Количество столбцов в первой строке.
+
+\texorpdfstring{$<$}{<} Возврат пустого прямоугольника при нулевой ширине.
+
+\texorpdfstring{$<$}{<} Инициализация максимального прямоугольника минимальной площадью.
+
+\texorpdfstring{$<$}{<} Проход по строкам.
+
+\texorpdfstring{$<$}{<} Проход по столбцам.
+
+\texorpdfstring{$<$}{<} Эталонное значение текущей ячейки.
+
+\texorpdfstring{$<$}{<} Максимальная ширина однородного участка.
+
+\texorpdfstring{$<$}{<} Нижняя граница текущей подматрицы.
+
+\texorpdfstring{$<$}{<} Флаг валидности текущей подматрицы.
+
+\texorpdfstring{$<$}{<} Нарушение однородности.
+
+\texorpdfstring{$<$}{<} Увеличиваем высоту, если строка валидна.
+
+\texorpdfstring{$<$}{<} Количество строк в найденной подматрице.
+
+\texorpdfstring{$<$}{<} Площадь текущей подматрицы.
+
+\texorpdfstring{$<$}{<} Обновление максимальной подматрицы.
+
+\texorpdfstring{$<$}{<} Возврат прямоугольника с максимальной площадью.\Hypertarget{functions_8h_a40cef7bd932ec02121419dca2d30d055}\index{functions.h@{functions.h}!isValidMatrix@{isValidMatrix}}
+\index{isValidMatrix@{isValidMatrix}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{isValidMatrix()}{isValidMatrix()}}
+{\footnotesize\ttfamily \label{functions_8h_a40cef7bd932ec02121419dca2d30d055} 
+bool is\+Valid\+Matrix (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{, }\item[{int}]{max\+Size}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет размеры и форму матрицы (прямоугольность, ограничения). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Двумерный вектор целых чисел. \\
+\hline
+{\em max\+Size} & Максимально допустимое количество строк/столбцов. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если матрица валидна.
+\end{DoxyReturn}
+Проверяет размеры и форму матрицы (прямоугольность, ограничения).
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Двумеренный вектор целых чисел, представляющий матрицу. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если матрица корректна; false — в противном случае. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Матрица пуста — некорректна.
+
+\texorpdfstring{$<$}{<} Число строк превышает допустимый предел.
+
+\texorpdfstring{$<$}{<} Количество столбцов в первой строке.
+
+\texorpdfstring{$<$}{<} Нулевая ширина или превышение максимума — матрица некорректна.
+
+\texorpdfstring{$<$}{<} Найдена строка с отличным числом столбцов — матрица некорректна.
+
+\texorpdfstring{$<$}{<} Все проверки пройдены — матрица корректна.\Hypertarget{functions_8h_abfafb2214a110f03e0051e9510837d48}\index{functions.h@{functions.h}!parseMatrixFromLines@{parseMatrixFromLines}}
+\index{parseMatrixFromLines@{parseMatrixFromLines}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{parseMatrixFromLines()}{parseMatrixFromLines()}}
+{\footnotesize\ttfamily \label{functions_8h_abfafb2214a110f03e0051e9510837d48} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ parse\+Matrix\+From\+Lines (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+Преобразует строки в числовую матрицу. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lines} & Вектор строк, каждая строка — строка матрицы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Матрица как вектор векторов. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при ошибке формата, пустых строках, недопустимых символах.\\
+\hline
+\end{DoxyExceptions}
+Преобразует строки в числовую матрицу.
+
+Каждая строка должна содержать числа, разделённые пробелами. Пустые строки пропускаются.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lines} & Вектор строк, каждая из которых представляет собой строку матрицы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Двумеренный вектор целых чисел — полученная матрица. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при неверном формате данных или если матрица не прямоугольная. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Количество столбцов, ожидаемое во всех строках
+
+\texorpdfstring{$<$}{<} Разбираю строку на числа
+
+\texorpdfstring{$<$}{<} Добавляю значение в строку
+
+\texorpdfstring{$<$}{<} Ошибка\+: нечисловой символ
+
+\texorpdfstring{$<$}{<} Запоминаю количество столбцов в первой строке
+
+\texorpdfstring{$<$}{<} Ошибка\+: строки разной длины
+
+\texorpdfstring{$<$}{<} Добавляю строку в матрицу\Hypertarget{functions_8h_aa3f33bf26832c862d7d22005291d4486}\index{functions.h@{functions.h}!readLinesFromFile@{readLinesFromFile}}
+\index{readLinesFromFile@{readLinesFromFile}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{readLinesFromFile()}{readLinesFromFile()}}
+{\footnotesize\ttfamily \label{functions_8h_aa3f33bf26832c862d7d22005291d4486} 
+std\+::vector$<$ std\+::string $>$ read\+Lines\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Считывает все строки из текстового файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Путь к входному файлу. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор строк из файла. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & с типом \doxylink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa72866d4d46c17fa5e9d0c6a1e9634d7e}{Error\+Type\+::in\+File\+Not\+Exist} при неудаче открытия.\\
+\hline
+\end{DoxyExceptions}
+Считывает все строки из текстового файла.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Путь к файлу для чтения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор строк\+: каждая строка файла как отдельный элемент. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при невозможности открыть файл. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Открываю файл на чтение
+
+\texorpdfstring{$<$}{<} Ошибка\+: файл не найден или не открыт
+
+\texorpdfstring{$<$}{<} Результат\+: строки файла
+
+\texorpdfstring{$<$}{<} Читаю построчно
+
+\texorpdfstring{$<$}{<} Добавляю строку в вектор\Hypertarget{functions_8h_a2fc70166c1c3fbc343df3bc97a9d9151}\index{functions.h@{functions.h}!readMatrixFromFile@{readMatrixFromFile}}
+\index{readMatrixFromFile@{readMatrixFromFile}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{readMatrixFromFile()}{readMatrixFromFile()}}
+{\footnotesize\ttfamily \label{functions_8h_a2fc70166c1c3fbc343df3bc97a9d9151} 
+void read\+Matrix\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{, }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Объединяет чтение строк и парсинг матрицы из файла. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла. \\
+\hline
+{\em matrix} & Ссылка на матрицу для записи результата. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & — ошибки чтения, парсинга или структуры.\\
+\hline
+\end{DoxyExceptions}
+Объединяет чтение строк и парсинг матрицы из файла.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Путь к входному файлу. \\
+\hline
+{\em matrix} & Результирующая матрица. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при ошибках чтения, парсинга или некорректной структуры. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{functions_8h_aa1e4af95db754e3ea52c83559ff4b3ee}\index{functions.h@{functions.h}!writeMatrixToFile@{writeMatrixToFile}}
+\index{writeMatrixToFile@{writeMatrixToFile}!functions.h@{functions.h}}
+\doxysubsubsection{\texorpdfstring{writeMatrixToFile()}{writeMatrixToFile()}}
+{\footnotesize\ttfamily \label{functions_8h_aa1e4af95db754e3ea52c83559ff4b3ee} 
+void write\+Matrix\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{, }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Записывает матрицу в текстовый файл. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Имя файла. \\
+\hline
+{\em matrix} & Матрица для записи. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & с типом \doxylink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa958476567b62d6d33f26b4f0a7bd0d68}{Error\+Type\+::out\+File\+Create\+Fail} при ошибке открытия.\\
+\hline
+\end{DoxyExceptions}
+Записывает матрицу в текстовый файл.
+
+Каждый ряд матрицы выводится на отдельной строке, элементы разделяются пробелами.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Двумеренный вектор целых чисел для записи. \\
+\hline
+{\em filename} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при невозможности открыть или записать файл. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Открываю файл на запись
+
+\texorpdfstring{$<$}{<} Ошибка\+: не удалось открыть файл
+
+\texorpdfstring{$<$}{<} Записываю элемент
+
+\texorpdfstring{$<$}{<} Разделяю пробелом, кроме последнего
+
+\texorpdfstring{$<$}{<} Завершаю строку

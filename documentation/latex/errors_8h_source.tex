@@ -1,0 +1,75 @@
+\doxysection{errors.\+h}
+\hypertarget{errors_8h_source}{}\label{errors_8h_source}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/errors.h@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/errors.h}}
+\mbox{\hyperlink{errors_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ERRORS\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ERRORS\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{enum\ class}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{ErrorType}}\ \{}
+\DoxyCodeLine{00008\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaf85f07b4585cce70e6e3bd3407bfa7fb}{noError}},\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00009\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa8cddbe448164b2c218487863eaa0dea3}{inFileExtensionError}},\ \ \ }
+\DoxyCodeLine{00010\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa1ab3e315d3d7c92e3a95926f5e7e4445}{emptyFile}},\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00011\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa72866d4d46c17fa5e9d0c6a1e9634d7e}{inFileNotExist}},\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00012\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa958476567b62d6d33f26b4f0a7bd0d68}{outFileCreateFail}},\ \ \ \ \ \ }
+\DoxyCodeLine{00013\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa27b4af4dfd734c99bb971088ba804e20}{matrixSizeExceed}},\ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aadb599f856763182dd305da3273667655}{invalidSymbol}},\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa307115b94c4cc320a8cd093ab1fbf061}{outOfRange}},\ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa94a53f0a218da4f0a06dc05acc2b6283}{emptyLine}},\ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaea08935d81cad5b354d4eb8c72a2f291}{notRectangular}}\ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00018\ \};}
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_error}{Error}}\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{ErrorType}}\ \mbox{\hyperlink{class_error_a4d9ef9fdc894088985e42ccda181ece7}{type}};\ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00024\ \ \ \ \ std::string\ \mbox{\hyperlink{class_error_a170b1e08059277e3460cdbb63711e460}{details}};\ \ \ \ }
+\DoxyCodeLine{00025\ \ \ \ \ std::string\ \mbox{\hyperlink{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1}{filePath}};\ \ \ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00033\ \ \ \ \ \mbox{\hyperlink{class_error_a585a1fecd8749102ac8816f3966f688a}{Error}}(\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{ErrorType}}\ t,\ \textcolor{keyword}{const}\ std::string\&\ det\ =\ \textcolor{stringliteral}{"{}"{}},\ \textcolor{keyword}{const}\ std::string\&\ file\ =\ \textcolor{stringliteral}{"{}"{}})}
+\DoxyCodeLine{00034\ \ \ \ \ \ \ \ \ :\ \mbox{\hyperlink{class_error_a4d9ef9fdc894088985e42ccda181ece7}{type}}(t),\ \mbox{\hyperlink{class_error_a170b1e08059277e3460cdbb63711e460}{details}}(det),\ \mbox{\hyperlink{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1}{filePath}}(file)\ \{\}}
+\DoxyCodeLine{00035\ }
+\DoxyCodeLine{00040\ \ \ \ \ std::string\ \mbox{\hyperlink{class_error_a1ce614c1825787b826fe0349e7dca8dc}{generateErrorMessage}}()\textcolor{keyword}{\ const\ }\{}
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ std::string\ msg;}
+\DoxyCodeLine{00042\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{switch}\ (\mbox{\hyperlink{class_error_a4d9ef9fdc894088985e42ccda181ece7}{type}})\ \{}
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa8cddbe448164b2c218487863eaa0dea3}{ErrorType::inFileExtensionError}}:}
+\DoxyCodeLine{00044\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Расширение\ файла\ не\ соответствует\ \(\backslash\)"{}.txt\(\backslash\)"{}."{}};}
+\DoxyCodeLine{00045\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00046\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa1ab3e315d3d7c92e3a95926f5e7e4445}{ErrorType::emptyFile}}:}
+\DoxyCodeLine{00047\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Входной\ файл\ пуст\ и\ не\ содержит\ матрицу."{}};}
+\DoxyCodeLine{00048\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00049\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa72866d4d46c17fa5e9d0c6a1e9634d7e}{ErrorType::inFileNotExist}}:}
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Не\ удалось\ открыть\ входной\ файл:\ "{}}\ +\ \mbox{\hyperlink{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1}{filePath}}\ +\ \textcolor{stringliteral}{"{}."{}};}
+\DoxyCodeLine{00051\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00052\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa958476567b62d6d33f26b4f0a7bd0d68}{ErrorType::outFileCreateFail}}:}
+\DoxyCodeLine{00053\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Не\ удалось\ создать\ или\ записать\ в\ выходной\ файл:\ "{}}\ +\ \mbox{\hyperlink{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1}{filePath}}\ +\ \textcolor{stringliteral}{"{}."{}};}
+\DoxyCodeLine{00054\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00055\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa27b4af4dfd734c99bb971088ba804e20}{ErrorType::matrixSizeExceed}}:}
+\DoxyCodeLine{00056\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Размер\ матрицы\ превышает\ допустимый\ лимит\ (>20)."{}};}
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00058\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aadb599f856763182dd305da3273667655}{ErrorType::invalidSymbol}}:}
+\DoxyCodeLine{00059\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Обнаружен\ недопустимый\ символ\ в\ матрице."{}};}
+\DoxyCodeLine{00060\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00061\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa307115b94c4cc320a8cd093ab1fbf061}{ErrorType::outOfRange}}:}
+\DoxyCodeLine{00062\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Значение\ элемента\ выходит\ за\ границы\ типа\ int."{}};}
+\DoxyCodeLine{00063\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa94a53f0a218da4f0a06dc05acc2b6283}{ErrorType::emptyLine}}:}
+\DoxyCodeLine{00065\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Найдена\ пустая\ строка\ в\ матрице."{}};}
+\DoxyCodeLine{00066\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00067\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaea08935d81cad5b354d4eb8c72a2f291}{ErrorType::notRectangular}}:}
+\DoxyCodeLine{00068\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Строки\ матрицы\ имеют\ разную\ длину\ (матрица\ не\ прямоугольная)."{}};}
+\DoxyCodeLine{00069\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00070\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{case}\ \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaf85f07b4585cce70e6e3bd3407bfa7fb}{ErrorType::noError}}:}
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ =\ \textcolor{stringliteral}{"{}Ошибок\ не\ обнаружено."{}};}
+\DoxyCodeLine{00072\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{break};}
+\DoxyCodeLine{00073\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00074\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (!\mbox{\hyperlink{class_error_a170b1e08059277e3460cdbb63711e460}{details}}.empty())\ \{}
+\DoxyCodeLine{00075\ \ \ \ \ \ \ \ \ \ \ \ \ msg\ +=\ \textcolor{stringliteral}{"{}\ Дополнительно:\ "{}}\ +\ \mbox{\hyperlink{class_error_a170b1e08059277e3460cdbb63711e460}{details}}\ +\ \textcolor{stringliteral}{"{}."{}};}
+\DoxyCodeLine{00076\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{00077\ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ msg;}
+\DoxyCodeLine{00078\ \ \ \ \ \}}
+\DoxyCodeLine{00079\ \};}
+\DoxyCodeLine{00080\ }
+\DoxyCodeLine{00081\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{//\ ERRORS\_H}}
+
+\end{DoxyCode}

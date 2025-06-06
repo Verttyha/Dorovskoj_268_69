@@ -1,0 +1,81 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/errors.h File Reference}
+\hypertarget{errors_8h}{}\label{errors_8h}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/errors.h@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/errors.h}}
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_error}{Error}}
+\begin{DoxyCompactList}\small\item\em Исключение для представления ошибок при работе с файлами и матрицей. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum class \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{Error\+Type}} \{ \newline
+\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaf85f07b4585cce70e6e3bd3407bfa7fb}{no\+Error}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa8cddbe448164b2c218487863eaa0dea3}{in\+File\+Extension\+Error}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa1ab3e315d3d7c92e3a95926f5e7e4445}{empty\+File}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa72866d4d46c17fa5e9d0c6a1e9634d7e}{in\+File\+Not\+Exist}}
+, \newline
+\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa958476567b62d6d33f26b4f0a7bd0d68}{out\+File\+Create\+Fail}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa27b4af4dfd734c99bb971088ba804e20}{matrix\+Size\+Exceed}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aadb599f856763182dd305da3273667655}{invalid\+Symbol}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa307115b94c4cc320a8cd093ab1fbf061}{out\+Of\+Range}}
+, \newline
+\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa94a53f0a218da4f0a06dc05acc2b6283}{empty\+Line}}
+, \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaea08935d81cad5b354d4eb8c72a2f291}{not\+Rectangular}}
+ \}
+\begin{DoxyCompactList}\small\item\em Типы ошибок, возникающих при работе с матрицей. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}\index{errors.h@{errors.h}!ErrorType@{ErrorType}}
+\index{ErrorType@{ErrorType}!errors.h@{errors.h}}
+\doxysubsubsection{\texorpdfstring{ErrorType}{ErrorType}}
+{\footnotesize\ttfamily \label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+enum class \mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{Error\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Типы ошибок, возникающих при работе с матрицей. 
+
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{noError@{noError}!errors.h@{errors.h}}\index{errors.h@{errors.h}!noError@{noError}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaf85f07b4585cce70e6e3bd3407bfa7fb}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+no\+Error&Ошибок не обнаружено. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{inFileExtensionError@{inFileExtensionError}!errors.h@{errors.h}}\index{errors.h@{errors.h}!inFileExtensionError@{inFileExtensionError}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa8cddbe448164b2c218487863eaa0dea3}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+in\+File\+Extension\+Error&Расширение файла не соответствует «.\+txt». \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{emptyFile@{emptyFile}!errors.h@{errors.h}}\index{errors.h@{errors.h}!emptyFile@{emptyFile}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa1ab3e315d3d7c92e3a95926f5e7e4445}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+empty\+File&Входной файл не содержит матрицу. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{inFileNotExist@{inFileNotExist}!errors.h@{errors.h}}\index{errors.h@{errors.h}!inFileNotExist@{inFileNotExist}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa72866d4d46c17fa5e9d0c6a1e9634d7e}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+in\+File\+Not\+Exist&Файл не найден или не удалось открыть входной файл. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{outFileCreateFail@{outFileCreateFail}!errors.h@{errors.h}}\index{errors.h@{errors.h}!outFileCreateFail@{outFileCreateFail}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa958476567b62d6d33f26b4f0a7bd0d68}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+out\+File\+Create\+Fail&Ошибка при создании выходного файла (нет прав или директории не существует). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{matrixSizeExceed@{matrixSizeExceed}!errors.h@{errors.h}}\index{errors.h@{errors.h}!matrixSizeExceed@{matrixSizeExceed}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa27b4af4dfd734c99bb971088ba804e20}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+matrix\+Size\+Exceed&Размер матрицы превышает допустимое значение (\texorpdfstring{$>$}{>}20). \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{invalidSymbol@{invalidSymbol}!errors.h@{errors.h}}\index{errors.h@{errors.h}!invalidSymbol@{invalidSymbol}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aadb599f856763182dd305da3273667655}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+invalid\+Symbol&Обнаружен недопустимый символ в матрице. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{outOfRange@{outOfRange}!errors.h@{errors.h}}\index{errors.h@{errors.h}!outOfRange@{outOfRange}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa307115b94c4cc320a8cd093ab1fbf061}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+out\+Of\+Range&Значение элемента выходит за допустимые границы типа int. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{emptyLine@{emptyLine}!errors.h@{errors.h}}\index{errors.h@{errors.h}!emptyLine@{emptyLine}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aa94a53f0a218da4f0a06dc05acc2b6283}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+empty\+Line&Найдена пустая строка в матрице. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{notRectangular@{notRectangular}!errors.h@{errors.h}}\index{errors.h@{errors.h}!notRectangular@{notRectangular}}}\Hypertarget{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45aaea08935d81cad5b354d4eb8c72a2f291}\label{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a} 
+not\+Rectangular&Строки матрицы имеют разную длину (матрица не прямоугольная). \\
+\hline
+
+\end{DoxyEnumFields}

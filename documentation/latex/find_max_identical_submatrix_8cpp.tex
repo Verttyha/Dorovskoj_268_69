@@ -1,0 +1,73 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/find\+Max\+Identical\+Submatrix.cpp File Reference}
+\hypertarget{find_max_identical_submatrix_8cpp}{}\label{find_max_identical_submatrix_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/findMaxIdenticalSubmatrix.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/findMaxIdenticalSubmatrix.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} \mbox{\hyperlink{find_max_identical_submatrix_8cpp_aab1da2c16adee146f74b119a3f8796f4}{find\+Max\+Identical\+Submatrix}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Находит наибольшую прямоугольную подматрицу, заполненную одинаковыми значениями. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{find_max_identical_submatrix_8cpp_aab1da2c16adee146f74b119a3f8796f4}\index{findMaxIdenticalSubmatrix.cpp@{findMaxIdenticalSubmatrix.cpp}!findMaxIdenticalSubmatrix@{findMaxIdenticalSubmatrix}}
+\index{findMaxIdenticalSubmatrix@{findMaxIdenticalSubmatrix}!findMaxIdenticalSubmatrix.cpp@{findMaxIdenticalSubmatrix.cpp}}
+\doxysubsubsection{\texorpdfstring{findMaxIdenticalSubmatrix()}{findMaxIdenticalSubmatrix()}}
+{\footnotesize\ttfamily \label{find_max_identical_submatrix_8cpp_aab1da2c16adee146f74b119a3f8796f4} 
+\mbox{\hyperlink{struct_rectangle}{Rectangle}} find\+Max\+Identical\+Submatrix (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Находит наибольшую прямоугольную подматрицу, заполненную одинаковыми значениями. 
+
+Находит наибольшую по площади подматрицу с одинаковыми элементами.
+
+Последовательно проверяет все возможные прямоугольные подматрицы, начиная от каждой позиции (i, j). Сравнивает каждый элемент с эталонным значением — значением в (i, j).
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Матрица целых чисел. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\doxylink{struct_rectangle}{Rectangle} Прямоугольник с координатами и площадью максимальной однородной подматрицы. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & если матрица некорректна. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Количество строк в матрице.
+
+\texorpdfstring{$<$}{<} Возврат пустого прямоугольника при пустой матрице.
+
+\texorpdfstring{$<$}{<} Количество столбцов в первой строке.
+
+\texorpdfstring{$<$}{<} Возврат пустого прямоугольника при нулевой ширине.
+
+\texorpdfstring{$<$}{<} Инициализация максимального прямоугольника минимальной площадью.
+
+\texorpdfstring{$<$}{<} Проход по строкам.
+
+\texorpdfstring{$<$}{<} Проход по столбцам.
+
+\texorpdfstring{$<$}{<} Эталонное значение текущей ячейки.
+
+\texorpdfstring{$<$}{<} Максимальная ширина однородного участка.
+
+\texorpdfstring{$<$}{<} Нижняя граница текущей подматрицы.
+
+\texorpdfstring{$<$}{<} Флаг валидности текущей подматрицы.
+
+\texorpdfstring{$<$}{<} Нарушение однородности.
+
+\texorpdfstring{$<$}{<} Увеличиваем высоту, если строка валидна.
+
+\texorpdfstring{$<$}{<} Количество строк в найденной подматрице.
+
+\texorpdfstring{$<$}{<} Площадь текущей подматрицы.
+
+\texorpdfstring{$<$}{<} Обновление максимальной подматрицы.
+
+\texorpdfstring{$<$}{<} Возврат прямоугольника с максимальной площадью.

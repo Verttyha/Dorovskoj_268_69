@@ -1,0 +1,38 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/read\+Matrix\+From\+File.cpp File Reference}
+\hypertarget{read_matrix_from_file_8cpp}{}\label{read_matrix_from_file_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/readMatrixFromFile.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/readMatrixFromFile.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{read_matrix_from_file_8cpp_a2fc70166c1c3fbc343df3bc97a9d9151}{read\+Matrix\+From\+File}} (const std\+::string \&filename, std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Считывает и проверяет матрицу целых чисел из файла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{read_matrix_from_file_8cpp_a2fc70166c1c3fbc343df3bc97a9d9151}\index{readMatrixFromFile.cpp@{readMatrixFromFile.cpp}!readMatrixFromFile@{readMatrixFromFile}}
+\index{readMatrixFromFile@{readMatrixFromFile}!readMatrixFromFile.cpp@{readMatrixFromFile.cpp}}
+\doxysubsubsection{\texorpdfstring{readMatrixFromFile()}{readMatrixFromFile()}}
+{\footnotesize\ttfamily \label{read_matrix_from_file_8cpp_a2fc70166c1c3fbc343df3bc97a9d9151} 
+void read\+Matrix\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{, }\item[{std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Считывает и проверяет матрицу целых чисел из файла. 
+
+Объединяет чтение строк и парсинг матрицы из файла.
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Путь к входному файлу. \\
+\hline
+{\em matrix} & Результирующая матрица. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при ошибках чтения, парсинга или некорректной структуры. \\
+\hline
+\end{DoxyExceptions}

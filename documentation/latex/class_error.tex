@@ -1,0 +1,106 @@
+\doxysection{Error Class Reference}
+\hypertarget{class_error}{}\label{class_error}\index{Error@{Error}}
+
+
+Исключение для представления ошибок при работе с файлами и матрицей.  
+
+
+
+
+{\ttfamily \#include $<$errors.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_error_a585a1fecd8749102ac8816f3966f688a}{Error}} (\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{Error\+Type}} t, const std\+::string \&det="{}"{}, const std\+::string \&file="{}"{})
+\begin{DoxyCompactList}\small\item\em Конструктор ошибки. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_error_a1ce614c1825787b826fe0349e7dca8dc}{generate\+Error\+Message}} () const
+\begin{DoxyCompactList}\small\item\em Генерирует человекочитаемое сообщение об ошибке. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{Error\+Type}} \mbox{\hyperlink{class_error_a4d9ef9fdc894088985e42ccda181ece7}{type}}
+\begin{DoxyCompactList}\small\item\em Тип ошибки. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_error_a170b1e08059277e3460cdbb63711e460}{details}}
+\begin{DoxyCompactList}\small\item\em Дополнительная информация об ошибке. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1}{file\+Path}}
+\begin{DoxyCompactList}\small\item\em Путь к файлу, вызвавшему ошибку. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Исключение для представления ошибок при работе с файлами и матрицей. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{class_error_a585a1fecd8749102ac8816f3966f688a}\index{Error@{Error}!Error@{Error}}
+\index{Error@{Error}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{Error()}{Error()}}
+{\footnotesize\ttfamily \label{class_error_a585a1fecd8749102ac8816f3966f688a} 
+Error\+::\+Error (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{Error\+Type}}}]{t}{, }\item[{const std\+::string \&}]{det}{ = {\ttfamily "{}"{}}, }\item[{const std\+::string \&}]{file}{ = {\ttfamily "{}"{}}}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Конструктор ошибки. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & Тип ошибки. \\
+\hline
+{\em det} & Дополнительные сведения (необязательно). \\
+\hline
+{\em file} & Путь к файлу (если применимо). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{class_error_a1ce614c1825787b826fe0349e7dca8dc}\index{Error@{Error}!generateErrorMessage@{generateErrorMessage}}
+\index{generateErrorMessage@{generateErrorMessage}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{generateErrorMessage()}{generateErrorMessage()}}
+{\footnotesize\ttfamily \label{class_error_a1ce614c1825787b826fe0349e7dca8dc} 
+std\+::string Error\+::generate\+Error\+Message (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Генерирует человекочитаемое сообщение об ошибке. 
+
+\begin{DoxyReturn}{Returns}
+Строка с описанием ошибки и, при наличии, дополнительными сведениями. 
+\end{DoxyReturn}
+
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{class_error_a170b1e08059277e3460cdbb63711e460}\index{Error@{Error}!details@{details}}
+\index{details@{details}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{details}{details}}
+{\footnotesize\ttfamily \label{class_error_a170b1e08059277e3460cdbb63711e460} 
+std\+::string Error\+::details}
+
+
+
+Дополнительная информация об ошибке. 
+
+\Hypertarget{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1}\index{Error@{Error}!filePath@{filePath}}
+\index{filePath@{filePath}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily \label{class_error_a3ea926f497f01c9026e4a5bf29c9bfd1} 
+std\+::string Error\+::file\+Path}
+
+
+
+Путь к файлу, вызвавшему ошибку. 
+
+\Hypertarget{class_error_a4d9ef9fdc894088985e42ccda181ece7}\index{Error@{Error}!type@{type}}
+\index{type@{type}!Error@{Error}}
+\doxysubsubsection{\texorpdfstring{type}{type}}
+{\footnotesize\ttfamily \label{class_error_a4d9ef9fdc894088985e42ccda181ece7} 
+\mbox{\hyperlink{errors_8h_ab0df38968e4f03a3f1f6d6df0f31f45a}{Error\+Type}} Error\+::type}
+
+
+
+Тип ошибки. 
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/\mbox{\hyperlink{errors_8h}{errors.\+h}}\end{DoxyCompactItemize}

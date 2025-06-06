@@ -1,0 +1,49 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/read\+Lines\+From\+File.cpp File Reference}
+\hypertarget{read_lines_from_file_8cpp}{}\label{read_lines_from_file_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/readLinesFromFile.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/readLinesFromFile.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{read_lines_from_file_8cpp_a834250189ece3ac62927c37cfa0e815d}{read\+Lines\+From\+File}} (const std\+::string \&file\+Name)
+\begin{DoxyCompactList}\small\item\em Считывает все строки из указанного файла. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{read_lines_from_file_8cpp_a834250189ece3ac62927c37cfa0e815d}\index{readLinesFromFile.cpp@{readLinesFromFile.cpp}!readLinesFromFile@{readLinesFromFile}}
+\index{readLinesFromFile@{readLinesFromFile}!readLinesFromFile.cpp@{readLinesFromFile.cpp}}
+\doxysubsubsection{\texorpdfstring{readLinesFromFile()}{readLinesFromFile()}}
+{\footnotesize\ttfamily \label{read_lines_from_file_8cpp_a834250189ece3ac62927c37cfa0e815d} 
+std\+::vector$<$ std\+::string $>$ read\+Lines\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{file\+Name}{}\end{DoxyParamCaption})}
+
+
+
+Считывает все строки из указанного файла. 
+
+Считывает все строки из текстового файла.
+
+
+\begin{DoxyParams}{Parameters}
+{\em file\+Name} & Путь к файлу для чтения. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Вектор строк\+: каждая строка файла как отдельный элемент. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при невозможности открыть файл. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Открываю файл на чтение
+
+\texorpdfstring{$<$}{<} Ошибка\+: файл не найден или не открыт
+
+\texorpdfstring{$<$}{<} Результат\+: строки файла
+
+\texorpdfstring{$<$}{<} Читаю построчно
+
+\texorpdfstring{$<$}{<} Добавляю строку в вектор

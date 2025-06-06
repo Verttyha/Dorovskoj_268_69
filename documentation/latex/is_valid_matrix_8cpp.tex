@@ -1,0 +1,43 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/is\+Valid\+Matrix.cpp File Reference}
+\hypertarget{is_valid_matrix_8cpp}{}\label{is_valid_matrix_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/isValidMatrix.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/isValidMatrix.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{is_valid_matrix_8cpp_a40cef7bd932ec02121419dca2d30d055}{is\+Valid\+Matrix}} (const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix, int max\+Size)
+\begin{DoxyCompactList}\small\item\em Проверяет, является ли заданная матрица корректной (не пустая и все строки имеют одинаковое число столбцов). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{is_valid_matrix_8cpp_a40cef7bd932ec02121419dca2d30d055}\index{isValidMatrix.cpp@{isValidMatrix.cpp}!isValidMatrix@{isValidMatrix}}
+\index{isValidMatrix@{isValidMatrix}!isValidMatrix.cpp@{isValidMatrix.cpp}}
+\doxysubsubsection{\texorpdfstring{isValidMatrix()}{isValidMatrix()}}
+{\footnotesize\ttfamily \label{is_valid_matrix_8cpp_a40cef7bd932ec02121419dca2d30d055} 
+bool is\+Valid\+Matrix (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{, }\item[{int}]{max\+Size}{}\end{DoxyParamCaption})}
+
+
+
+Проверяет, является ли заданная матрица корректной (не пустая и все строки имеют одинаковое число столбцов). 
+
+Проверяет размеры и форму матрицы (прямоугольность, ограничения).
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Двумеренный вектор целых чисел, представляющий матрицу. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true, если матрица корректна; false — в противном случае. 
+\end{DoxyReturn}
+\texorpdfstring{$<$}{<} Матрица пуста — некорректна.
+
+\texorpdfstring{$<$}{<} Число строк превышает допустимый предел.
+
+\texorpdfstring{$<$}{<} Количество столбцов в первой строке.
+
+\texorpdfstring{$<$}{<} Нулевая ширина или превышение максимума — матрица некорректна.
+
+\texorpdfstring{$<$}{<} Найдена строка с отличным числом столбцов — матрица некорректна.
+
+\texorpdfstring{$<$}{<} Все проверки пройдены — матрица корректна.

@@ -1,0 +1,50 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/write\+Matrix\+To\+File.cpp File Reference}
+\hypertarget{write_matrix_to_file_8cpp}{}\label{write_matrix_to_file_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/writeMatrixToFile.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/writeMatrixToFile.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{write_matrix_to_file_8cpp_aa1e4af95db754e3ea52c83559ff4b3ee}{write\+Matrix\+To\+File}} (const std\+::string \&filename, const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&matrix)
+\begin{DoxyCompactList}\small\item\em Записывает матрицу целых чисел в файл. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{write_matrix_to_file_8cpp_aa1e4af95db754e3ea52c83559ff4b3ee}\index{writeMatrixToFile.cpp@{writeMatrixToFile.cpp}!writeMatrixToFile@{writeMatrixToFile}}
+\index{writeMatrixToFile@{writeMatrixToFile}!writeMatrixToFile.cpp@{writeMatrixToFile.cpp}}
+\doxysubsubsection{\texorpdfstring{writeMatrixToFile()}{writeMatrixToFile()}}
+{\footnotesize\ttfamily \label{write_matrix_to_file_8cpp_aa1e4af95db754e3ea52c83559ff4b3ee} 
+void write\+Matrix\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename}{, }\item[{const std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \&}]{matrix}{}\end{DoxyParamCaption})}
+
+
+
+Записывает матрицу целых чисел в файл. 
+
+Записывает матрицу в текстовый файл.
+
+Каждый ряд матрицы выводится на отдельной строке, элементы разделяются пробелами.
+
+
+\begin{DoxyParams}{Parameters}
+{\em matrix} & Двумеренный вектор целых чисел для записи. \\
+\hline
+{\em filename} & Путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при невозможности открыть или записать файл. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Открываю файл на запись
+
+\texorpdfstring{$<$}{<} Ошибка\+: не удалось открыть файл
+
+\texorpdfstring{$<$}{<} Записываю элемент
+
+\texorpdfstring{$<$}{<} Разделяю пробелом, кроме последнего
+
+\texorpdfstring{$<$}{<} Завершаю строку

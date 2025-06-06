@@ -1,0 +1,55 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/parse\+Matrix\+From\+Lines.cpp File Reference}
+\hypertarget{parse_matrix_from_lines_8cpp}{}\label{parse_matrix_from_lines_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/parseMatrixFromLines.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/parseMatrixFromLines.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ \mbox{\hyperlink{parse_matrix_from_lines_8cpp_abfafb2214a110f03e0051e9510837d48}{parse\+Matrix\+From\+Lines}} (const std\+::vector$<$ std\+::string $>$ \&lines)
+\begin{DoxyCompactList}\small\item\em Преобразует строки текста в матрицу целых чисел. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{parse_matrix_from_lines_8cpp_abfafb2214a110f03e0051e9510837d48}\index{parseMatrixFromLines.cpp@{parseMatrixFromLines.cpp}!parseMatrixFromLines@{parseMatrixFromLines}}
+\index{parseMatrixFromLines@{parseMatrixFromLines}!parseMatrixFromLines.cpp@{parseMatrixFromLines.cpp}}
+\doxysubsubsection{\texorpdfstring{parseMatrixFromLines()}{parseMatrixFromLines()}}
+{\footnotesize\ttfamily \label{parse_matrix_from_lines_8cpp_abfafb2214a110f03e0051e9510837d48} 
+std\+::vector$<$ std\+::vector$<$ int $>$ $>$ parse\+Matrix\+From\+Lines (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{lines}{}\end{DoxyParamCaption})}
+
+
+
+Преобразует строки текста в матрицу целых чисел. 
+
+Преобразует строки в числовую матрицу.
+
+Каждая строка должна содержать числа, разделённые пробелами. Пустые строки пропускаются.
+
+
+\begin{DoxyParams}{Parameters}
+{\em lines} & Вектор строк, каждая из которых представляет собой строку матрицы. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Двумеренный вектор целых чисел — полученная матрица. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em \doxylink{class_error}{Error}} & при неверном формате данных или если матрица не прямоугольная. \\
+\hline
+\end{DoxyExceptions}
+\texorpdfstring{$<$}{<} Количество столбцов, ожидаемое во всех строках
+
+\texorpdfstring{$<$}{<} Разбираю строку на числа
+
+\texorpdfstring{$<$}{<} Добавляю значение в строку
+
+\texorpdfstring{$<$}{<} Ошибка\+: нечисловой символ
+
+\texorpdfstring{$<$}{<} Запоминаю количество столбцов в первой строке
+
+\texorpdfstring{$<$}{<} Ошибка\+: строки разной длины
+
+\texorpdfstring{$<$}{<} Добавляю строку в матрицу

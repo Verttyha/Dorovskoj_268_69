@@ -1,0 +1,48 @@
+\doxysection{C\+:/\+Users/andre/\+Desktop/\+Dorovskoj\+Project/\+Search\+Matrix\+Identical\+Elements/main.cpp File Reference}
+\hypertarget{main_8cpp}{}\label{main_8cpp}\index{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/main.cpp@{C:/Users/andre/Desktop/DorovskojProject/SearchMatrixIdenticalElements/main.cpp}}
+{\ttfamily \#include "{}functions.\+h"{}}\newline
+{\ttfamily \#include "{}errors.\+h"{}}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char \texorpdfstring{$\ast$}{*}argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Точка входа в программу. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\Hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}\index{main.cpp@{main.cpp}!main@{main}}
+\index{main@{main}!main.cpp@{main.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily \label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97} 
+int main (\begin{DoxyParamCaption}\item[{int}]{argc}{, }\item[{char \texorpdfstring{$\ast$}{*}}]{argv}{\mbox{[}$\,$\mbox{]}}\end{DoxyParamCaption})}
+
+
+
+Точка входа в программу. 
+
+Читает имена входного и выходного файлов, затем\+:
+\begin{DoxyItemize}
+\item считывает матрицу из входного файла;
+\item ищет максимально большую одинаковую подматрицу;
+\item записывает результат в выходной файл.
+\end{DoxyItemize}
+
+При ошибках выводит сообщение и завершает программу.
+
+Точка входа в программу.
+
+Выполняет чтение входного файла с матрицей, проверку корректности аргументов, поиск максимальной подматрицы с одинаковыми элементами, запись результата в выходной файл и обработку исключений.
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & Количество аргументов командной строки (должно быть 3). \\
+\hline
+{\em argv} & Массив аргументов командной строки\+: argv\mbox{[}1\mbox{]} — путь к входному файлу (.txt), argv\mbox{[}2\mbox{]} — путь к выходному файлу. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int Код завершения программы\+: 0 — успех, 1 — ошибка. 
+\end{DoxyReturn}
